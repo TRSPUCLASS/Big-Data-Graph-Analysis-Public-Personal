@@ -1,23 +1,12 @@
-# Big Data Graph Analysis
-Processing a BigData Graph with a third party library.
-
-Read the PowerPoint on Canvas.
-*You may use the Graph Library Shortest Paths functions*
-*You **may not** use the Graph Library Closeness Centrality functions*
-* You will work with the data available [here](https://www.kaggle.com/datasets/pappukrjha/google-web-graph/code).
-
-**DO NOT COPY, DO THE PROJECT 100% YOURSELVES**
-
-**USE AI AT YOUR OWN RISK**
-> It is probable that I ask in the test about how you did something on this assignment, so learn very well!
-
-
-
+Assigned in a class on Algorithm Design and Analysis, this project analyzes the edges and nodes of a graph to find the node(s) most suited to be updated to ensure that updates are sent through a subnetwork in an efficient and timely manner. Implemented in python using parts of the third party library NetworkX*, this project calculates the closeness centrality of nodes in a graph to achieve the above functionality, as the most central node is most well-suited to the propagation of the updates. The dataset used to do this project can be found [at this url](https://www.kaggle.com/datasets/pappukrjha/google-web-graph/code).\
+*The usage of functions that would trivialize the assignment, i.e. the closeness centrality functions, were forbidden. \
+\
+Below is the original README of the project, with assignment details truncated.
 ## Introduction	
 This program aims to find the node most suited to propagate changes through a sub-network of a network. It accomplishes this by modelling the network (Provided as a file with a set of edges) as a graph, calculating a requested subgraph, and finding the most central vertex of that subgraph. The most central vertex is well suited to propagate changes due to being the node with the average shortest distance to the other nodes, requiring fewer nodes on average to propagate the change.\
 This program also provides a tool to find the shortest path between any two given nodes in a network.
 ## Description
-In order to calculate centrality, the program first computes the shortest paths from each node to each other node. This is done using networkx's built in all_pairs_shortest_paths function. 
+In order to calculate centrality, the program first computes the shortest paths from each node to each other node. This is done using NetworkX's built in all_pairs_shortest_paths function. 
 This data is then stored in a dictionary for internal access and a CSV file in case of manual review.\
 ![image](https://github.com/user-attachments/assets/ff9e9e55-bbfa-4662-aded-59a7e54d5c73)\
   A dictionary, used for internal access\
